@@ -1,4 +1,12 @@
 def comprobarLetraDNI(dni: str) -> bool:
+    """Comprobar DNI
+
+    Args:
+        dni (str): dni a comprobar
+
+    Returns:
+        bool: comprobacion si el dni es correcto ono
+    """
     letras = "TRWAGMYFPDXBNJZSQVHLCKE"
 
     # Comprobar que tenga 8 números y una letra

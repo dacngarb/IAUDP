@@ -1,4 +1,16 @@
 def convertirTemperatura(temperatura: float, unidadOrigen: str, unidadDestino: str) -> float:
+    """Convierte una temperatura de la unidad inicial especificada a la unidad final especificada
+
+    Args:
+        temperatura_inicial (float): La temperatura desde la que queremos convertir a otra unidad
+        unidad_inicial (str): La unidad en la que se encuentra la temperatura inicial
+        unidad_final (str): La unidad en la que queremos convertir la temperatura inicial
+
+    Returns:
+        float: La temperatura en la unidad final indicada
+    """
+
+
 
     # Comprobar que las unidades sean válidas
     if unidadOrigen not in ("C", "K", "F") or unidadDestino not in ("C", "K", "F"):

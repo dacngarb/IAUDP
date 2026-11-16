@@ -1,6 +1,16 @@
 from decimal import Decimal, ROUND_CEILING
 
 def calcularValorBruto(precio: float, tipoIVA: str) -> float:
+    """Calcular el valor vruto para determinar el IVA
+
+    Args: 
+        precio(float): precio a calcular
+        tipoIVA(str): el tipo de IVA que se hara el cálculo
+    
+    Returns:
+        float: 
+
+    """ 
 
     # Determinar el porcentaje de IVA
     if tipoIVA == "GENERAL":
