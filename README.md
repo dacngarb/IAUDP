@@ -1,14 +1,35 @@
-# IAUDP – Introducción a la Programación
+# 🐍 IAUDP — Introducción a la Programación
 
-Repositorio dedicado a la asignatura de **Introducción a la Programación**, donde se recopilan ejercicios, prácticas, ejemplos y exámenes realizados utilizando el lenguaje de programación Python.
+Repositorio dedicado a la asignatura **Introducción a la Programación**, donde voy desarrollando mis conocimientos sobre programación utilizando el lenguaje **Python**.
 
-## 📌 Descripción
+En este repositorio recopilo las prácticas y ejercicios realizados durante mi aprendizaje, trabajando progresivamente los fundamentos de la programación y la resolución de problemas mediante código.
 
-Este repositorio contiene diferentes actividades desarrolladas durante el aprendizaje de Python. Su objetivo es poner en práctica los conceptos fundamentales de programación, desarrollar la lógica y adquirir conocimientos sobre las estructuras y herramientas que ofrece este lenguaje.
+---
 
-Los ejercicios están organizados en diferentes carpetas para facilitar su consulta y seguimiento.
+## 🐍 Python
 
-## 📂 Estructura del repositorio
+Actualmente estoy aprendiendo los fundamentos de Python y desarrollando la lógica necesaria para crear programas y resolver diferentes problemas.
+
+### 📚 Contenidos
+
+* Variables y tipos de datos
+* Operadores y expresiones
+* Entrada y salida de datos
+* Cadenas de caracteres
+* Listas
+* Tuplas
+* Rangos (`range`)
+* Manipulación de colecciones
+* Estructuras de control
+* Condicionales
+* Bucles
+* Resolución de problemas
+* Desarrollo de algoritmos
+* Pruebas y ejecución de programas
+
+---
+
+## 📁 Organización
 
 ```text
 IAUDP/
@@ -28,76 +49,41 @@ IAUDP/
 ├── pruebaMain/
 │
 ├── hola_mundo.py
-│
 ├── practica1.py
 │
-└── python.code-workspace
+└── README.md
 ```
 
-### Contenido
+La organización del repositorio sigue el desarrollo de la asignatura, permitiendo reflejar la evolución de mis conocimientos y la aplicación práctica de los conceptos aprendidos.
 
-- **Tema 2:** ejercicios y tareas prácticas correspondientes al segundo tema.
-- **Tema 3:** ejercicios y tareas prácticas correspondientes al tercer tema.
-- **ejemplos:** ejemplos de código utilizados para practicar los conceptos de programación.
-- **examen01:** ejercicios y archivos relacionados con el primer examen.
-- **examen02:** ejercicios y archivos relacionados con el segundo examen.
-- **pruebaMain:** archivos de pruebas y desarrollo.
-- **hola_mundo.py:** primer contacto con Python y entrada de datos.
-- **practica1.py:** ejercicios relacionados con listas, tuplas, rangos y operaciones básicas.
+---
 
-## 🛠️ Tecnologías utilizadas
+## 🧪 Progreso
 
-- **Python 3:** lenguaje de programación utilizado para desarrollar las prácticas.
-- **Visual Studio Code:** entorno de desarrollo utilizado para trabajar con los archivos.
-- **Git y GitHub:** herramientas para el control de versiones y almacenamiento del código.
+| Bloque | Contenido | Estado |
+| ------ | --------- | ------ |
+| 01 | Introducción a Python y fundamentos | 🟢 |
+| 02 | Variables, tipos de datos y operadores | 🟢 |
+| 03 | Cadenas de caracteres y colecciones | 🟢 |
+| 04 | Listas, tuplas y rangos | 🟢 |
+| 05 | Estructuras de control | 🟡 |
+| 06 | Resolución de problemas y algoritmos | 🟡 |
 
-## 🚀 Instalación y ejecución
+> 🟢 Trabajado · 🟡 En progreso · ⚪ Pendiente
 
-Para obtener una copia del repositorio en tu ordenador, ejecuta:
+---
 
-```bash
-git clone https://github.com/dacngarb/IAUDP.git
-```
+## 🎯 Objetivo
 
-Accede a la carpeta del proyecto:
+Adquirir una base sólida en programación mediante Python, aprendiendo a interpretar problemas, desarrollar algoritmos y construir soluciones utilizando las herramientas fundamentales del lenguaje.
 
-```bash
-cd IAUDP
-```
+El objetivo es mejorar progresivamente mi lógica de programación, ganar autonomía en la resolución de ejercicios y adquirir los conocimientos necesarios para desarrollar programas más complejos.
 
-Para ejecutar cualquiera de los archivos Python, utiliza:
+Este repositorio representa mi evolución y progreso durante el aprendizaje de la programación.
 
-```bash
-python hola_mundo.py
-```
+---
 
-También puedes ejecutar otros ejercicios cambiando el nombre del archivo:
+### 🐍 DAW · IAUDP
 
-```bash
-python practica1.py
-```
-
-**Requisito:** tener Python 3 instalado en el equipo.
-
-## 🎯 Objetivos de aprendizaje
-
-A través de las diferentes prácticas y ejercicios se pretende trabajar los siguientes aspectos:
-
-- Comprender los fundamentos de la programación.
-- Familiarizarse con la sintaxis de Python.
-- Trabajar con variables y tipos de datos.
-- Utilizar listas, tuplas y otras estructuras de datos.
-- Aprender a utilizar funciones.
-- Practicar la entrada y salida de datos.
-- Desarrollar la lógica de programación mediante ejercicios.
-- Resolver problemas mediante código.
-
-## 👨‍💻 Autor
-
-**dacngarb**
-
-GitHub: [@dacngarb](https://github.com/dacngarb)
-
-## 📄 Licencia
-
-Este repositorio tiene fines educativos y académicos.
+**Introducción a la Programación**  
+**Python · Fundamentos de programación**
