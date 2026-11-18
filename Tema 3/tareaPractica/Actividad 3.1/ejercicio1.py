@@ -8,13 +8,13 @@ def comprobarLetraDNI(dni: str) -> bool:
         bool: comprobacion si el dni es correcto ono
     """
     letras = "TRWAGMYFPDXBNJZSQVHLCKE"
-
+    valido = True
     # Comprobar que tenga 8 números y una letra
     if len(dni) != 9:
-        return False
+        valido = False
 
     if not dni[:8].isdigit() or not dni[8].isalpha():
-        return False
+        valido = False
 
     # Calcular la letra correspondiente
     numero = int(dni[:8])
@@ -26,5 +26,5 @@ def comprobarLetraDNI(dni: str) -> bool:
 
 
 # Ejemplos
-print(comprobarLetraDNI("12345678Z"))  # True
+print(comprobarLetraDNI("26835432K"))  # True
 print(comprobarLetraDNI("12345678A"))  # False

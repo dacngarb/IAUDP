@@ -1,4 +1,3 @@
-
 def sumatorio(numeroPositivo: int) -> int:
     if numeroPositivo < 0:
         raise ValueError("El número debe ser positivo o cero.")
@@ -36,7 +35,3 @@ def aplicar_funcion(valorNumerico: int, cadenaTexto: str) -> int:
 print(aplicar_funcion(3, "sumatorio"))  # 6
 print(aplicar_funcion(3, "factorial"))  # 6
 
-try:
-    print(aplicar_funcion(-3, "factorial"))
-except ValueError as error:
-    print(error)

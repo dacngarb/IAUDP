@@ -1,4 +1,4 @@
-def convertirTemperatura(temperatura: float, unidadOrigen: str, unidadDestino: str) -> float:
+def convertirTemperatura(temperatura_inicial : float, unidad_inicial : str, unidad_final : str) -> float:
     """Convierte una temperatura de la unidad inicial especificada a la unidad final especificada
 
     Args:
@@ -9,33 +9,36 @@ def convertirTemperatura(temperatura: float, unidadOrigen: str, unidadDestino: s
     Returns:
         float: La temperatura en la unidad final indicada
     """
+    unidad_inicial = unidad_inicial.upper()
+    unidad_final = unidad_final.upper()
 
+    if unidad_inicial not in ["C", "K", "F"] or unidad_final not in ["C", "K", "F"]:
+        raise ValueError("La unidad inicial debe ser C, K o F")
 
+    temperatura_final = 0
 
-    # Comprobar que las unidades sean válidas
-    if unidadOrigen not in ("C", "K", "F") or unidadDestino not in ("C", "K", "F"):
-        raise ValueError("Unidad de temperatura no válida")
+    if unidad_inicial == "C":
+        if temperatura_inicial < -273.15:
+            raise ValueError("La temperatura inicial no puede ser inferior a -273,15 Celsius")
+        if unidad_final == "F":
+            temperatura_final = (temperatura_inicial * (9/5)) + 32
+        elif unidad_final == "K":
+            temperatura_final = temperatura_inicial + 273.15
+    elif unidad_inicial == "F":
+        if temperatura_inicial < -459.67:
+            raise ValueError("La temperatura inicial no puede ser inferior a -459,67 Fahrenheit")
+        if unidad_final == "C":
+            temperatura_final = (temperatura_inicial - 32) * (5/9)
+        elif unidad_final == "K":
+            temperatura_final = ((temperatura_inicial - 32) * (5/9)) + 273
+    elif unidad_inicial == "K":
+        if temperatura_inicial < 0:
+            raise ValueError("La temperatura inicial no puede ser inferior a 0 Kelvin")
+        if unidad_final == "F":
+            temperatura_final = (temperatura_inicial - 273.15) * (9/5)
+        elif unidad_final == "C":
+            temperatura_final = temperatura_inicial - 273.15
 
-    # Convertir primero a Celsius
-    if unidadOrigen == "C":
-        celsius = temperatura
-    elif unidadOrigen == "K":
-        celsius = temperatura - 273.15
-    else:
-        celsius = (temperatura - 32) * 5 / 9
+    return round(temperatura_final,2)
 
-    # Convertir de Celsius a la unidad de destino
-    if unidadDestino == "C":
-        resultado = celsius
-    elif unidadDestino == "K":
-        resultado = celsius + 273.15
-    else:
-        resultado = (celsius * 9 / 5) + 32
-
-    return round(resultado, 2)
-
-
-# Ejemplos
-print(convertirTemperatura(10, "F", "C"))  # -12.22
-print(convertirTemperatura(25, "C", "K"))  # 298.15
-print(convertirTemperatura(0, "C", "F"))   # 32.0
+print(convertirTemperatura(24,"K","F"))
